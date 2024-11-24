@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.container button{
+    background-color: transparent;
+    color: black;
+}
+.container button:hover{
+    color: var(--main-color);
+
+}

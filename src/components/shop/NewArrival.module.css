@@ -1,0 +1,49 @@
+.newArrival-container{
+    padding-top: 60px;
+
+}
+.newArrival-container h1{
+    text-align: center;
+    font-family: Cinzel Decorative;
+    /* font-family: "Playfair Display", serif; */
+    font-size: 40px;
+    font-weight: 500;
+}
+.newArrival-container .product-card{
+    /* padding: 0.5rem; */
+    position: relative;
+}
+/* .add{
+    transform: translate(0,-50px);
+    transition: all 0.3s;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    color: var(--main-color);
+} */
+/* .product-card .text p:first-of-type{
+    visibility: visible;
+    opacity: 1;
+} */
+/* .product-card:hover .add{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0,-25px);
+} */
+/* .product-card:hover .text p:first-of-type{
+    visibility: hidden;
+    opacity: 0;
+} */
+.product-card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.newArrival-container .newArrival-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
+    grid-gap: 30px;
+    /* padding-left: 0.75rem; */
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+}

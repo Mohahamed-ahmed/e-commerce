@@ -1,0 +1,16 @@
+.service{
+    text-align: center;
+    padding: 0.75rem 1rem;
+}
+.service img {
+    width: 70px;
+}
+
+.service h3 {
+    margin: 1rem 0 0;
+    font-weight: 600;
+}
+
+.service p {
+    margin: .25rem 0;
+}

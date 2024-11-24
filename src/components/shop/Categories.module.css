@@ -1,0 +1,178 @@
+.categories-container{
+    padding-top: 60px;
+    min-height: 150vh;
+}
+.categories-container h1{
+    text-align: center;
+    font-family: Cinzel Decorative;
+    /* font-family: 'Roboto', sans-serif */
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.categories-container .home-categories{
+    position: relative;
+}
+.categories-container .home-categories .categories-image{
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+.categories-container .home-categories .categories-image img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.mens-card,
+.women-card,
+.access-card{
+    /* border-radius: 5px;
+    display: flex;
+    flex-direction: column; */
+}
+img{
+    /* width: 370px;
+    object-fit: contain; */
+}
+.mens-card,
+.access-card{
+    /* align-items: end;
+    margin-right: 350px; */
+}
+.mens-card{
+    max-width: 500px;
+    max-height: 550px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 20%;
+    top: 50px;
+}
+.mens-card .text{
+    position: absolute;
+    top: 40%;
+    left: -50%;
+    max-width: 300px;
+}
+.mens-card .men-image{
+    /* width: 370px;
+    object-fit: contain;
+    height: 300px; */
+}
+.access-card{
+    max-width: 500px;
+    max-height: 550px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    transform: translate(50%, 50%);
+    right: 30%;
+    top: 300px;
+}
+.access-card .text{
+    position: absolute;
+    top: 25%;
+    left: -50%;
+    max-width: 300px;
+}
+.home-categories h2{
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: #111111;
+    font-family: "Playfair Display", serif;
+}
+.women-card{
+    max-width: 500px;
+    max-height: 550px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin-left: 200px;
+    top: 270px;
+}
+.home-categories a{
+    color: var(--main-color);
+    cursor: pointer;
+    position: relative;
+}
+.home-categories a::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    bottom: -1px;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.women-card:hover a::after,
+.access-card:hover a::after,
+.mens-card:hover a::after{
+    width: 100%;
+}
+
+@media (max-width:992px){
+    .home-categories{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 100px;
+
+    }
+    .mens-card,
+    .women-card,
+    .access-card{
+        position: initial;
+        max-width: 500px;
+        width: 400px;
+        margin-left: 0;
+        height: auto;
+        transform: initial;
+    }
+    .categories-container .home-categories .categories-image{
+        width: 100%;
+        overflow: hidden;
+        height: 400px;
+        max-height: 100%
+    }
+    .categories-container .home-categories .categories-image img{
+        width: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    .mens-card .text,
+    .women-card .text,
+    .access-card .text{
+        position: initial;
+        max-width: 300px;
+    }
+}
+
+@media(min-width:996px) and (max-width:1500px){
+    .mens-card{
+        top: 10px;
+    }
+
+    .women-card{
+        margin-left: 90px;
+    }
+
+    .access-card{
+        right: 22%;
+    }
+}
+
+@media(max-width:592px){
+    .mens-card,
+    .women-card,
+    .access-card{
+        max-width: 350px;
+        width: 280px;
+    }
+}

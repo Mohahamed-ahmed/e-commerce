@@ -1,0 +1,111 @@
+footer {
+    background-color: #0a0a0a;
+    padding-top: 5rem;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .container .box h1 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  
+  .list{
+    padding-left: 0;
+  }
+  .container .box ul li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .container .box ul li a,
+  .container .box p {
+    color: #b2b2b2;
+    font-weight: 300;
+    font-size: 0.9rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .container .box ul li a:hover {
+    color: var(--main-color);
+  }
+  
+  .container .box .links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  
+  .container .box .links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .container .box .links a.card1:hover {
+    background-color: #0a0a0a;
+  }
+  
+  .container .box .links a.card2:hover {
+    background-color: #0077b5;
+  }
+  
+  .container .box .links svg {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .container .box .links svg.linkedin {
+    fill: #0077b5;
+  }
+  
+  .container .box .links a:hover > svg {
+    fill: #fff;
+  }
+  
+  .container .box input {
+    display: block;
+    border: none;
+    outline: none;
+    padding: 0.5rem 0;
+    background-color: transparent;
+    border-bottom: 1px solid #b2b2b2;
+    color: #b2b2b2;
+    width: 100%;
+  }
+  
+  .container .box button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    cursor: pointer;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: white;
+  }
+  
+  .end {
+    width: 80%;
+    margin: 1.5rem auto 0;
+    padding: 1.5rem 0;
+    border-top: 1px solid #b2b2b2;
+    color: #b2b2b2;
+    text-align: center;
+  }
+  
+  .end a {
+    color: #fff;
+  }

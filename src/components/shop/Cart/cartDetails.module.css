@@ -1,0 +1,120 @@
+.cart-container{
+    margin-top: 7rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+.cart-container .cart-headlines{
+    /* display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 0 1rem; */
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: .5rem;
+    border-bottom: 1px solid black;
+
+}
+.cart-container .cart-headlines .totalprice-head{
+    justify-self: right;
+}
+.cart-item{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 20px;
+    padding: 1rem 0;
+    border-bottom: 1px solid black;
+}
+ .cart-item .item-price{
+ }
+ .cart-item .totalprice , .item-price{
+    font-size: 20px;
+ }
+ .cart-item .totalprice{
+    justify-self: right;
+ }
+.cart-item .cart-image{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+.cart-item .container-buttons{
+    
+}
+.cart-item .quantity-buttons{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width:150px;
+    justify-content: space-around;
+    border-radius: 7px;
+    padding: 0.5rem;
+
+}
+.cart-item .quantity-buttons .plus,.minus{
+    background-color: transparent;
+    color: black;
+    /* max-width: 70px; */
+}
+.cart-item .remove-button{
+    color: var(--main-color);
+    background-color: transparent;
+    width: fit-content;
+    padding-left: 0;
+}
+.cart-container .subtotal{
+    padding: 1rem;
+    justify-self: right;
+}
+.checkout-button{
+    padding: 0.5rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    display: inline-block;
+}
+.arrow{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+}
+.arrow a{
+    display: flex;
+    align-items: center;
+    color: gray;
+    gap: 10px;
+    padding: 0.5rem;
+}
+.empty-cart{
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    /* margin-top: 8rem; */
+    min-height: 100vh;
+    /* margin-bottom: 8rem; */
+    justify-content: center;
+}
+
+@media(max-width:630px){
+    .cart-container .cart-headlines{
+        display: none;
+    }
+    .cart-item{
+        border-top: 1px solid black;
+        grid-template-columns:1fr;
+        row-gap: 1rem;
+    }
+    .cart-item .cart-image{
+        width: 150px;
+        height: 150px;
+    }
+    .cart-item .totalprice{
+        justify-self: auto;
+    }
+}

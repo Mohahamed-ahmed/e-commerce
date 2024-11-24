@@ -1,0 +1,98 @@
+.form-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-container form{
+    display: flex;
+    width: 30rem;
+    padding: 3rem 2rem;
+    align-items: center;
+    background-color: red;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 90%;
+    margin:5rem 0;
+    background-color: #fff;
+    box-shadow: #959da533 0 8px 24px;;
+}
+.form-container form .input{
+    width: 100%;
+    margin-bottom: 7px;
+    padding: 20px 0 0;
+    position: relative;
+}
+.form-container form .input input{
+    width: 100%;
+    padding: 7px 7px;
+    outline: 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+}
+.form-container form .button{
+    width: 100%;
+    margin-top: 1rem;
+}
+.form-container form .button .links{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.form-container form .button .links a{
+    color: var(--main-color);
+    font-family: Space Grotesk;
+}
+.form-container form .button button{
+    width: 100%;
+    font-size: 1.25rem;
+    background-color: var(--main-color);
+    font-family: Space Grotesk;
+    padding: 0.5rem 0.75rem;
+    border-radius: 7px;
+    color: white;
+}
+.form-container form h2,p{
+    margin: 0;
+    font-family: Space Grotesk;
+}
+.form-container .input .input-field{
+    border: 2px solid #9b9b9b;
+    transition: all 0.3s ease-in-out;
+}
+.form-container .input label{
+    color: #9b9b9b;
+    transition: all 0.3s ease-in-out;
+}
+.form-container .input:focus-within label{
+    color: #121212;
+}
+.form-container .input .input-field:focus{
+    font-weight: 500;
+    border-color: #121212;
+    outline: 0
+}
+.errormsg{
+    color: red;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    padding: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: white;
+    justify-self: center;
+    --_m: 
+      conic-gradient(#0000 10%,#000),
+      linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+            mask: var(--_m);
+    -webkit-mask-composite: source-out;
+            mask-composite: subtract;
+    animation: l3 1s infinite linear;
+  }
+  @keyframes l3 {to{transform: rotate(1turn)}}

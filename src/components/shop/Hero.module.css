@@ -1,0 +1,55 @@
+.landing-container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+}
+.landing-container .hero-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 115vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.landing-container .text{
+    position: absolute;
+    left: 0;
+    padding: 0 2rem;
+}
+.landing-container .text h1{
+    margin: 0;
+    font-family: Cinzel Decorative;
+
+}
+.landing-container .text p{
+    color: var(--main-color);
+    font-family: Cinzel Decorative;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+.landing-container .text .shop-button{
+    background-color: black;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    display: inline-block;
+    border-radius: 7px;
+    width: 160px;
+    font-size: 20px;
+}
+.discover-now{
+    margin-bottom: 1rem;
+}
+/* @media (max-width:992px){
+    .landing-container .hero-image{
+        width: 100vw;
+    }    
+} */
+
+/* @media(max-width:776px){
+    .landing-container .hero-image{
+        width: 80vw;
+    }
+} */

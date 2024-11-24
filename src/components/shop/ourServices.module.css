@@ -1,0 +1,14 @@
+.services-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 0;
+    margin: 0 auto; 
+}
+
+@media(max-width:680px){
+    .services-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
