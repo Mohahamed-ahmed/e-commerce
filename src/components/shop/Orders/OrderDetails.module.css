@@ -82,6 +82,15 @@
     .itemDetails-order .orderImage-details img{
         height: 150px;
     }
+    .orderDetails-container .order-address p{
+        font-size: 15px;
+    }
+    .orderDetails-container .order-address .order-status{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 15px;
+    }
 }
 
 .loader {

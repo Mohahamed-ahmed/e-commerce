@@ -14,7 +14,7 @@
 .profile-container .user-details{
     padding: 1rem 1rem;
     background-color: white;
-    width: 70%;
+    width: 80%;
     border-radius: 7px;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 10%);
     border: 1px solid;
@@ -38,7 +38,7 @@
 .profile-container .orders-container{
     padding: 1rem 1rem;
     background-color: white;
-    width: 70%;
+    width: 80%;
     border-radius: 7px;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 10%);
     border: 1px solid;
@@ -120,6 +120,21 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media(max-width:425px){
+    .profile-container .orders-container .order-details .order-text h2{
+        font-size: 15px;
+    }
+    .profile-container .orders-container .order-details .order-img .order-image{
+        width: 180px;
+        height: 200px;
+    }
+    .profile-container .orders-container .order-details .order-text .order-button{
+        position: initial;
+        padding: 0.5rem 0.5rem;
+        border-bottom: 10px;
     }
 }
 

@@ -80,8 +80,8 @@
 
 /* HTML: <div class="loader"></div> */
 .loader {
-    width: 50px;
-    padding: 8px;
+    width: 30px;
+    padding: 5px;
     aspect-ratio: 1;
     border-radius: 50%;
     background: white;
